@@ -6,7 +6,7 @@ const port = process.env.PORT || 3001;
 const prisma = new PrismaClient()
 
 app.get('/', async (req, res) => {
-    const products = await prisma.product.findMany()
+    const products = await prisma.category.findMany()
     res.json(products)
 });
 
