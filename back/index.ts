@@ -15,6 +15,7 @@ app.use(body.json({
 // Routes
 
 app.use('/products', require('./routes/products'));
+app.use('/authorization', require('./routes/authorization'));
 
 
 app.listen(port, () => {

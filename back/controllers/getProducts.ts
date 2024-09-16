@@ -5,7 +5,7 @@ export async function getProductsController(req: any, res: any) {
         const prisma = new PrismaClient();
 
         // Retrieve products from the database
-        const products = await prisma.category.findMany();
+        const products = await prisma.product.findMany();
 
         // Send the response only once
         res.status(200).json({
