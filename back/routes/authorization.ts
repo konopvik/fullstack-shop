@@ -1,4 +1,4 @@
-import {getAuth} from "../controllers/getAuth";
+import {getAuthController} from "../controllers/getAuth";
 
 const express  = require('express');
 
@@ -6,7 +6,7 @@ const router = express.Router();
 
 console.log('auth route');
 
-router.get('/', getAuth);
+router.get('/', getAuthController);
 
 module.exports = router;
 

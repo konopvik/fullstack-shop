@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
 
-export async function getAuth(req: any, res: any) {
+export async function getAuthController(req: any, res: any) {
     const prisma = new PrismaClient();
     const JWT_SECRET: string = process.env.JWT_SECRET || "your_secret_key"
     const { email, password } = req.body
