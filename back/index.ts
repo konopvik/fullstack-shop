@@ -26,6 +26,8 @@ app.use('/cart', require('./routes/cart'));
 app.use('/categories', require('./routes/categories'))
 
 
+
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
